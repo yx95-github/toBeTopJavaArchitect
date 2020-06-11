@@ -37,7 +37,7 @@ public class P200NumberOfIslands {
             int gr = grid.length;
             int gc = grid[0].length;
 
-            if (r < 0 || c < 0 || r > gr || c > gc || grid[r][c] != '1') {
+            if (r < 0 || c < 0 || r >= gr || c >= gc || grid[r][c] != '1') {
                 return;
             }
 
